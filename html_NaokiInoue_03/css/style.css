@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* ここから下に記載していく */
+
+.body{
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: white;
+}
+
+/* headrの項目を横並びにしている 先生写経 */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.header＿nav {
+  display: flex;
+}
+
+.header＿nav li{
+  margin-left: 40px;
+}
+
+link{
+  color: black;
+}
+
+/* ここからメインビジュアル */
+/* メインビジュアルの画像の真ん中に文字を入れるhttps://saruwakakun.com/html-css/reference/image-text */
+/* *******後で写経１を見る ***********/
+.mainvisual {/*親div*/
+    position: relative;/*相対配置*/
+    }
+
+.mainvisual img {
+    width: 100%;
+    }
+
+
+.maintext1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    }
+
+.maintext2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin-bottom: 30;
+    padding: 30px;
+    color: white;
+    font-size: larger;
+    font-weight: 300;
+    /*文字の装飾は省略*/
+}
+
+
+/* ここからaboutの部分 */
+.about {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellowgreen;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.about_subtitle {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.about_text{
+  margin: 40px;
+}
+
+.imageBox{
+  /* flexは横並びにする */
+ display: flex;  
+ margin-bottom: 60px;
+}
+
+/* ここから２つで画像を横にサイト幅に合わせて４つ並べている。25％は４つだから */
+.imageBox p{
+  width: 25%;
+}
+
+/* imageBoxの中にあるpタグの中のimgに対して攻撃 */
+.imageBox p img{
+  width: 100%;
+}
+ 
+/* 　コースの外側、上 */
+.course{
+  margin: 60px 0;
+}
+
+.course_title{
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: yellowgreen; 
+}
+
+.course_text{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  /* 行間を調整するおまじない */
+}
+
+ /* ここが写真とテキストならぶところ */
+.course_tile{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.course_item-img1{
+  flex-basis: 50%;
+}
+
+.course_itembox1{
+  flex-basis: 50%;
+  align-items: center;
+}
+
+
+ /* courseのアイテムないのタイトル */
+.course_item-title1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 120;
+  margin-bottom: 40px;
+}
+
+.News{
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.News_title{
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px; 
+  color: yellowgreen;
+}
+
+.News_subtitle{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.newsList_item{
+  width: 300px;
+}
+
+.newsList{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+ /* ここからフォーム部分 */
+
+form {
+  width: 80%;
+}
+
+.contact-form{
+  width: 70%;
+  margin:0 auto;
+  padding: 8px 0;
+}
+
+.contact-form th{
+  text-align:left;
+  width:30%;
+  padding:8px 0;
+  vertical-align:middle;
+  align-items: center;
+}
+
+.contact-form td{
+  width:75%;
+  padding:8px 0;
+  vertical-align:middle;
+  align-items: center;
+}
+
+.contact-form input:not(input[type="radio"]), .contact-form textarea{
+  width:100%;
+}
+.contact-form input:not(input[type="radio"]){
+  height: 38px;
+}
+.contact-form textarea{
+  height:170px;
+}
+.contact-form label{
+  display:block;
+}
+
+.cp_ipradio {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+          width: 500px;
+}
+.cp_ipradio:before,
+.cp_ipradio:after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+.cp_ipradio .box {
+	width: 90%;
+	text-align: left;
+	border: 1px solid white;
+	border-radius: 3px;
+	background: #ffffff;
+  margin: 0 auto;
+}
+.cp_ipradio input[type=radio] {
+	display: none;
+}
+.cp_ipradio label:focus,
+.cp_ipradio label:hover,
+.cp_ipradio label:active,
+.cp_ipradio input:checked + label {
+	color:;
+}
+.cp_ipradio label:focus:before,
+.cp_ipradio label:hover:before,
+.cp_ipradio label:active:before,
+.cp_ipradio input:checked + label:before {
+	border-color:yellowgreen;
+
+}
+.cp_ipradio label {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 1em 1em 1em 3em;
+	cursor: pointer;
+	-webkit-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cp_ipradio label:before {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 10px;
+	height: 10px;
+	content: '';
+	border: 0.2em solid #cccccc;
+	border-radius: 50%;
+}
+.cp_ipradio input:checked + label:before {
+	border-color: yellowgreen;
+	background:yellowgreen;
+}
+.cp_ipradio input:disabled + label {
+	cursor: not-allowed;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.cp_ipradio input:disabled + label:hover {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.hover01{
+    display: inline-block;
+    text-decoration: none;
+    background:yellowgreen;
+    color: black!important;
+    border: solid 2px yellowgreen;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 18px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+}
+  /*ホバー無し状態のスタイル＿ここまで*/
+  
+  /*ホバー有り状態のスタイル*/
+.hover01:hover {
+    background: #fff;
+    color: yellowgreen!important;
+}
+  /*ホバー有り状態のスタイル＿ここまで*/
+  
+/* ここからアクセス */
+.access{
+    background-color: rgb(228, 213, 213);
+    padding: 60px 0;
+    width: 100%;
+}
+
+.access_subtitle{
+  text-align: center;
+}
+
+.access_title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px; 
+}
+  
+.access_text_bottom{
+    margin-bottom: 60px;
+}
+
+.access_text{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    /* 行間を調整するおまじない */
+}
+
+.access_subtitle{
+    margin-bottom: 60px;
+}
+   
+.googlemap iframe{
+    width: 100%;
+    height: 300px;
+}
+ 
+.access_text_name{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.access_text_bottom{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+  /* ここからcontact部分 */
+.contact {
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+    align-items: center;
+}
+  
+.contact_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+  
+.contact_subtitle {
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+  
+.contact_text1{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact_text2{
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+  .form{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+
+   
+/* コンタクトのところ */
+
+table{
+  width: 70%;
+  text-align: left;
+}
+
+table, td, th {
+  border-bottom: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+
+th{
+  width: 30%;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+}
+
+td{
+    width: 70%;
+    border-bottom: 1px solid black;
+    margin-left: 50px;
+}
+
+select{
+  margin-left: 10px;
+}
+
+input{
+  width: 100%;
+  margin-left: 10px;
+}
+
+  /* ここは送信ボタンfooterの上 */
+  .hover02{
+    display: inline-block;
+    text-decoration: none;
+    background:yellowgreen;
+    color: black!important;
+    border: solid 2px yellowgreen;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 140px;
+    font-size: 18px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+  }
+  /*ホバー無し状態のスタイル＿ここまで*/
+  
+  /*ホバー有り状態のスタイル*/
+.hover02:hover {
+    background: #fff;
+    color: yellowgreen!important;
+  }
+  /*ホバー有り状態のスタイル＿ここまで*/
+
+  
+  /* ここからフッターです */
+.footer{
+    width: 100%;
+    background-color: #707070;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+.footer_text{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+  
